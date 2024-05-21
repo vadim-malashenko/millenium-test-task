@@ -19,10 +19,7 @@ php -S 127.0.0.1:8080 -t .
 # Task
 ![Task](https://raw.githubusercontent.com/vadim-malashenko/millenium-test-task/main/task.png)
 
-1. 
-  1. [users](http://localhost:8080/#users)
-  2. [products/add](http://localhost:8080/#products)
-  3. DDL
+1. DDL
   ```
   CREATE TABLE orders
   (
