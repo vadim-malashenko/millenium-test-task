@@ -15,6 +15,7 @@ for f in schema/*.sql; do mysql -uroot -p31415 < $f; done
 ## Serve
 ```
 php -S 127.0.0.1:8080 -t .
+Navigate to ![http://locathost:8080](http://localhost:8080)
 ```
 ## Task
 ![Task](https://raw.githubusercontent.com/vadim-malashenko/millenium-test-task/main/task.png)
