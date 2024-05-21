@@ -89,9 +89,4 @@ final class App
             echo $response->getBody();
         }
     }
-
-    function __get(string $name): mixed
-    {
-        return $this->config[$name] ?? null;
-    }
 }
