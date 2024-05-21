@@ -1,6 +1,6 @@
 <?php
 
-namespace Millenium\TeskTask;
+namespace Millenium\TestTask;
 
 require __DIR__ . "/vendor/autoload.php";
 
