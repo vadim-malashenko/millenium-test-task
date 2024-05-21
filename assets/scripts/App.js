@@ -12,12 +12,11 @@ export default class App {
     constructor()
     {
         new Router ([
-            [/^\/*$/, this.index.bind(this)],
             [/^users\/*$/, this.users.bind(this)],
             [/^user\/\d+\/orders\/*$/, this.userOrders.bind(this)],
             [/^products\/*$/, this.products.bind(this)],
             [/^products\/add\/*$/, this.addProduct.bind(this)],
-            [/^.*$/, this.notFound.bind(this)]
+            [/^.*$/, this.index.bind(this)]
         ]).listen ()
 
         on(`submit`, this.postProduct.bind(this))
@@ -79,11 +78,6 @@ export default class App {
     {
         const view = new AddProduct()
         window.app.innerHTML = view.render()
-    }
-
-    notFound(hash)
-    {
-        alert(`Not found: ${hash}`)
     }
 
     async postProduct(ev)
