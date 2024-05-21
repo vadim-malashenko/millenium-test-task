@@ -19,7 +19,10 @@ php -S 127.0.0.1:8080 -t .
 # Task
 ![Task](https://raw.githubusercontent.com/vadim-malashenko/millenium-test-task/main/task.png)
 
-1. 3)
+1.
+  -
+  -
+  -
   ```
   CREATE TABLE orders
   (
