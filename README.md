@@ -18,22 +18,3 @@ php -S 127.0.0.1:8080 -t .
 ```
 # Task
 ![Task](https://raw.githubusercontent.com/vadim-malashenko/millenium-test-task/main/task.png)
-
-1. DDL
-  ```
-  CREATE TABLE orders
-  (
-      id                                             INT AUTO_INCREMENT PRIMARY KEY
-      product_id                                     INT NOT NULL,
-      created_at timestamp default CURRENT_TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP
-  );
-  CREATE TABLE user_orders
-  (
-      user_id                                        INT NOT NULL,
-      order_id                                       INT NOT NULL
-  );
-  ALTER TABLE user_orders ADD UNIQUE (user_id, order_id);
- ```
-2. Не уверен, но думаю что от меня хотят услышать что-то из этого: "Наследование", "Полиморфизм", "Шаблонный метод".
-3. Первое - язык программирования, второе - РСУБД.
-5. [Можно](https://github.com/vadim-malashenko/millenium-test-task/blob/main/src/App.php#L11)
